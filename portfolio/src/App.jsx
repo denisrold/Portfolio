@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import { Routes, Route, useLocation } from "react-router-dom";
+import Header from './components/Header';
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
 
   return (
     <>
-      <div>
-
+      <div className="App">
+          <Header />
           <p>Hola Mundo</p>
 
        </div>
