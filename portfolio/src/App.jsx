@@ -2,18 +2,21 @@ import { useState } from 'react'
 
 import './App.css'
 import { Routes, Route, useLocation } from "react-router-dom";
-import Header from './components/Header';
+import Header from './components/views/Header';
+import Navbar from './components/views/Navbar';
+import Footer from './components/views/Footer';
+import Body from './components/views/Body';
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div className="App">
+          <Navbar />
           <Header />
-          <p>Hola Mundo</p>
-
+          <Body />
+          <Footer />
        </div>
     </>
   )
