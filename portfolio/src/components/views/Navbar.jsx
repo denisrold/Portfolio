@@ -8,8 +8,9 @@ const Navbar=()=>{
     const [isMenuOpen, setMenuOpen] = useState(false);
     //BarHandler
     const toggleMenu = () => {
-      setMenuOpen(!isMenuOpen);
-    };
+        setTimeout(() => {
+            setMenuOpen(!isMenuOpen);
+          }, "150")};
 
     return (
         <nav className="fixed h-20 z-10 rounded-b-sm w-full bg-blue-600 font-semibold  top-0 left-0 p-4 md:px-4 lg:px-36 text-white tracking-wide shadow-md shadow-bottom">
