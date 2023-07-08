@@ -18,6 +18,7 @@ const Navbar=()=>{
                     <li onClick={toggleMenu} className={customList}>About me</li>
                     <li onClick={toggleMenu} className={customList}>Skills</li>
                     <li onClick={toggleMenu} className={customList}>Projects</li>
+                    <li onClick={toggleMenu} className={`md:hidden border-b border-slate-400 rounded-lg + ${customList}`}>Contact me</li>
                 </ul>
                 <button className="hidden md:flex h-12 w-36  bg-blue-500 justify-around border-0 hover:bg-blue-700">Contact me</button>
             </div>
