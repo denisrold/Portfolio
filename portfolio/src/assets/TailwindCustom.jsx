@@ -1,1 +1,1 @@
-export const customList = "w-full pt-2  h-12 border-black border-t-0 text-blue-500 md:text-white md:border-none md:pt-0 flex-2 mr-8 cursor-pointer md:hover:text-blue-500"
+export const customList = "w-full pt-2  h-12 border-black border-t-0 active:bg-blue-700 md:active:bg-transparent md:active:scale-95 active:bg-opacity-50 active:text-white text-blue-500 md:text-white md:border-none md:pt-0 flex-2 mr-8 cursor-pointer md:hover:text-blue-500"
