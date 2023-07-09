@@ -2,10 +2,9 @@ import { useState } from 'react'
 
 import './App.css'
 import { Routes, Route, useLocation } from "react-router-dom";
-import Header from './components/views/Header';
 import Navbar from './components/views/Navbar';
 import Footer from './components/views/Footer';
-import Body from './components/views/Body';
+import Home from './components/views/Home';
 
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
     <>
       <div className="App">
           <Navbar />
-          <Header />
-          <Body />
+          <Home />
           <Footer />
        </div>
     </>
