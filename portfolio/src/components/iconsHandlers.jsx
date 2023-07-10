@@ -18,6 +18,6 @@ export const IconsHAndlersHome =()=>{
     return(
     <div className='flex space-x-2 mt-3 mb-auto'> 
     <img src={iconGHhome} onClick={handleClickGitHub} alt="Github logo" className=' w-10 h-10 md:w-7 md:h-7 hover:scale-105 cursor-pointer'/>
-    <img src={iconLINhome} onClick={handleClickLinked} alt='LinkedIn logo' className='w-10   md:w-7 md:h-7 hover:scale-105 cursor-pointer' />
+    <img src={iconLINhome} onClick={handleClickLinked} alt='LinkedIn logo' className='w-10   md:w-7  hover:scale-105 cursor-pointer' />
     </div>)
 }
