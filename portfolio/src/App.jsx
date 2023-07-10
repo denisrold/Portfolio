@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="App">
+      <div className="App" style={{ width: '100%', height: '100vh',marginTop:'100px' }}>
           <Navbar />
           <Home />
           <TechStack/>
