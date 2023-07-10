@@ -10,8 +10,9 @@ const Home=()=>{
                 <div className="ml-auto mr-auto md:ml-0 md:mr-0">               
                 <IconsHAndlersHome />
                 </div>
+            <p className='w-full ml-auto mr-auto h-72 mt-10 md:hidden border border-black'>soy una imagen</p>
             </div>
-            <div className=' w-full md:w-96 h-72 mt-8 md:mt-0 border border-black'>soy una imagen</div>
+            <p className='hidden md:flex w-full ml-auto mr-auto md:w-96 h-72 mt-8 md:mt-0 border border-black'>soy una imagen</p>
         </main>
     )
     }
