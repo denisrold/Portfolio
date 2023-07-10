@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { customList } from '../../assets/TailwindCustom';
+import { customList } from '../assets/styles/TailwindCustom';
 
 const Navbar=()=>{
     //BarState
