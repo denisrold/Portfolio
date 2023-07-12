@@ -1,4 +1,4 @@
-let array = [
+const TechArray = [
 {
     name:"CSS3", 
     url:"https://www.w3schools.com/css/",
@@ -24,9 +24,9 @@ let array = [
     url:"https://git-scm.com/",
     img:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"},
 {
-    name:"https://www.w3.org/html/" ,
-    url:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-    img:"html5"},
+    name:"html5",
+    url:"https://www.w3.org/html/",
+    img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"},
 {
     name:"javascript",
     url:"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -52,3 +52,5 @@ let array = [
     url:"https://redux.js.org",
     img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"}
 ];
+
+export default TechArray;
