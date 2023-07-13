@@ -3,8 +3,9 @@ import TechsArray from "../components/utils/TechsArray"
 const TechStack =()=>{
     return (
         <div className="md:-ml-10 flex flex-col -ml-4 mb-10 max-w-xs lg:mx-auto lg:flex-row justify-center space-x-4 space-y-2 lg:space-y-0 lg:space-x-10">
-            <p className="text-xl md:-ml-36 lg:ml-10 mt-auto mb-auto md:text-xl lg:text-lg font-bold">Tech Stack:</p>
-            <div className=" p-1 w-fit h-56 border border-black md:w-fit  md:h-20 flex flex-wrap md:flex-nowrap space-x-3">
+            <p className="ml-5 text-xl mb-8 md:-ml-36 lg:ml-10 md:mt-auto md:mb-auto md:text-xl lg:text-lg font-bold">Tech Stack:</p>
+            <div className="w-94 border rounded-lg bg-slate-500 h-1 opacity-30  md:hidden"/>
+            <div className="p-1 w-fit h-56  md:w-fit  md:h-20 flex flex-wrap md:flex-nowrap space-x-3">
                 {TechsArray.map(s=>{
                   return (
                     <div key={s.key} className=" bg-slate-50 w-14  md:my-auto border rounded-full md:h-14 shadow-xl h-16 md:w-14 flex-grow md:flex-row first:ml-3 md:first:ml-0">
@@ -14,7 +15,9 @@ const TechStack =()=>{
                     </div>)
                 })
                 }
+           
             </div>
+            <div className="w-94 border rounded-lg bg-slate-500 h-1 opacity-30  md:hidden"/>
         </div>
     )
 }
