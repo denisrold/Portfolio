@@ -7,7 +7,7 @@ const TechStack =()=>{
             <div className=" p-1 w-fit h-56 border border-black md:w-fit  md:h-20 flex flex-wrap md:flex-nowrap space-x-3">
                 {TechsArray.map(s=>{
                   return (
-                    <div key={s.key} className=" bg-slate-50 w-14  md:my-auto border rounded-full md:h-14 shadow-xl h-16 md:w-14 flex-grow md:flex-row">
+                    <div key={s.key} className=" bg-slate-50 w-14  md:my-auto border rounded-full md:h-14 shadow-xl h-16 md:w-14 flex-grow md:flex-row first:ml-3">
                         <a href={s.url} target="_blank" rel="noreferrer"> 
                         <img src={s.img} alt={s.name} className="mx-auto mt-3  md:mt-2 max-w-2xl w-13 h-10 saturate-150 hover:brightness-110"/>
                         </a>
