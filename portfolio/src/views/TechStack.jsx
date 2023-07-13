@@ -2,8 +2,8 @@ import TechsArray from "../components/utils/TechsArray"
 
 const TechStack =()=>{
     return (
-        <div className="flex flex-col -ml-2 mb-10 max-w-xs md:mx-auto md:flex-row justify-center space-x-4 space-y-2 lg:space-y-0 lg:space-x-10">
-            <p className="lg:ml-10 mt-auto mb-auto text-lg font-bold">Tech Stack</p>
+        <div className="md:-ml-8 flex flex-col -ml-2 mb-10 max-w-xs lg:mx-auto lg:flex-row justify-center space-x-4 space-y-2 lg:space-y-0 lg:space-x-10">
+            <p className="text-xl md:-ml-40 lg:ml-10 mt-auto mb-auto md:text-xl lg:text-lg font-bold">Tech Stack:</p>
             <div className=" p-1 w-fit h-56 border border-black md:w-fit  md:h-20 flex flex-wrap md:flex-nowrap space-x-3">
                 {TechsArray.map(s=>{
                   return (
