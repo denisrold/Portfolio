@@ -15,9 +15,9 @@ function App() {
           <Navbar />
           <Home />
           <TechStack/>
-          <Footer />
           <About />
           <Proyects />
+          <Footer />
        </div>
     </>
   )

@@ -1,6 +1,8 @@
 const About = ()=>{
     return (
-        <div>Soy un About</div>
+        <div className="flex w-full h-60 ">
+            <h1>About Me</h1>
+        </div>
     )
 }
 
