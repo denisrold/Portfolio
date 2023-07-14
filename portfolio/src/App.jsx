@@ -4,6 +4,8 @@ import Navbar from './views/Navbar';
 import Footer from './views/Footer';
 import Home from './views/Home';
 import TechStack from'./views/TechStack';
+import About from './views/About';
+import Proyects from './views/Proyects';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
           <Home />
           <TechStack/>
           <Footer />
+          <About />
+          <Proyects />
        </div>
     </>
   )
