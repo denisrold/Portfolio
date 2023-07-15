@@ -11,8 +11,8 @@ const About = ()=>{
             <div className="w-96 h-96 md:w-96 md:h-96 border border-black">Soy una Imagen</div>
         </div>
         <div className="col-span-2 ml-2 md:col-span-1 md:ml-5 w-full">
-            <p className="w-96 text-start text-xl ml-5 mb-6">{AboutText.paragraphOne}</p>
-            <p className="w-96 text-start text-xl ml-5">{AboutText.paragraphTwo}</p>
+            <p className="md:w-96  text-start text-xl ml-5 mb-6">{AboutText.paragraphOne}</p>
+            <p className="md:w-96 text-start text-xl ml-5">{AboutText.paragraphTwo}</p>
         </div>
     </div>
 
