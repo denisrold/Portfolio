@@ -13,8 +13,8 @@ const Proyects = () =>{
                     <p className="text-center ml-auto mr-auto  w-auto text-xl font-semibold mb-5">Title</p>
                     <p className="text-center w-auto text-base ml-5  mb-6 mr-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolore eaque praesentium odio ex nisi, minus facilis animi culpa autem aliquam maiores asperiores impedit neque voluptates aut veritatis a libero!</p>
                     <div className="ml-auto mr-auto lg:mt-16 w-80 space-x-8 mb-6 md:mt-0 md:pb-6">
-                        <button>Button1</button>
-                        <button>Button2</button>
+                        <button className="shadow-xl" >Button1</button>
+                        <button className="shadow-xl" >Button2</button>
                     </div>
                 </div>
         </div>
@@ -23,8 +23,8 @@ const Proyects = () =>{
                     <p className="text-center ml-auto mr-auto  w-auto text-xl font-semibold mb-5">Title</p>
                     <p className="text-center w-auto text-base ml-5  mb-6 mr-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolore eaque praesentium odio ex nisi, minus facilis animi culpa autem aliquam maiores asperiores impedit neque voluptates aut veritatis a libero!</p>
                     <div className="ml-auto mr-auto lg:mt-16 w-80 space-x-8 mb-6 md:mt-0 md:pb-6">
-                        <button>Button1</button>
-                        <button>Button2</button>
+                        <button className="shadow-xl">Button1</button>
+                        <button className="shadow-xl">Button2</button>
                     </div>
                 </div>
                 <div className="mx-auto md:pl-8 lg:pd-5 col-span-2 md:col-span-1 mb-10 md:mr-2">
