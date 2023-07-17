@@ -1,7 +1,11 @@
 const ContactMe = ()=>{
     return(
         <>
-        <p>Soy un contacto</p>
+        <p>Contact Me</p>
+        <div className="flex flex-row justify-around ml-10">
+        <div>Mail</div>
+        <div>WhatsApp</div>
+        </div>
         </>
     )
 }
