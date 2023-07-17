@@ -13,18 +13,6 @@ export default {
       animation: {
         fade: "fade 1s infinite",
       },
-      keyframes: {
-        animateborde: {
-          "0%": { borderWidth: "0" },
-          "25%": { borderWidth: "0" },
-          "50%": { borderWidth: "2px" },
-          "75%": { borderWidth: "2px" },
-          "100%": { borderWidth: "0" },
-        },
-      },
-      animation: {
-        borde: "animateborde 4s linear infinite", // Duración y repetición de la animación
-      },
     },
   },
   plugins: [],
