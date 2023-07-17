@@ -6,6 +6,7 @@ import Home from './views/Home';
 import TechStack from'./views/TechStack';
 import About from './views/About';
 import Proyects from './views/Proyects';
+import ContactMe  from './views/Contact';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <TechStack/>
           <About />
           <Proyects />
+          <ContactMe />
           <Footer />
        </div>
     </>
