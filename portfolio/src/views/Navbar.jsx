@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { customList } from '../assets/styles/TailwindCustom';
+import { customList,customButton } from '../assets/styles/TailwindCustom';
+
 
 const Navbar=()=>{
     //BarState
@@ -27,7 +28,7 @@ const Navbar=()=>{
                     <li onClick={toggleMenu} className={customList}>Projects</li>
                     <li onClick={toggleMenu} className={`shadow-lg shadow-bottom md:hidden + ${customList}`}>Contact me</li>
                 </ul>
-                <button className="hidden md:flex h-12 w-36  bg-blue-500 justify-around border-0 hover:bg-blue-700 active:scale-95 focus:outline-none focus:bg-none">Contact me</button>
+                <button className={`hidden md:flex h-12 w-36 ${customButton}`}>Contact me</button>
             </div>
         </nav>
     )
