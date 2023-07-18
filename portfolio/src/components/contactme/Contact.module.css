@@ -12,22 +12,22 @@
 
 .card::before{
     width: 0%;
-    height: 1.5px;
+    height: 1px;
     bottom: -0;
-    box-shadow: 381px -127px rgba(0, 0, 255, 0.7);
+    box-shadow: 381px -128px rgba(0, 0, 255, 0.7);
 }
 
 .card::after{
     top:0;
-    width: 1.5px;
+    width: 1px;
     height: 0%;
-    box-shadow: 381px 127px rgba(0, 0, 255, 0.7);
+    box-shadow: 384px 128px rgba(0, 0, 255, 0.7);
 }
 .card:hover::after{
-    height: 99.7%;
-    box-shadow: 380px -0.3px rgba(0, 0, 255, 0.7);
+    height: 100%;
+    box-shadow: 384px 0px rgba(0, 0, 255, 0.7);
 }
 .card:hover::before{
-    width: 99.27%;
+    width: 100%;
     box-shadow: 0px -127px rgba(0, 0, 255, 0.7);
 }
