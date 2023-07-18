@@ -19,7 +19,7 @@ const ContactMe = ()=>{
                     <img className="w-16 h-16 border border-black rounded-full shadow-lg"/>
                     <div className="flex flex-col items-start pt-3"> 
                     <p className="font-semibold text-lg">WhatsApp</p>
-                    <a href="https://api.whatsapp.com/send?phone=3417122685" target="_blank" className="cursor-pointer text-gray-700 hover:text-blue-700">+543417122685</a>
+                    <a href="https://api.whatsapp.com/send?phone=3417122685" target="_blank" className="cursor-pointer text-gray-700 hover:text-blue-700">+54 3417122685</a>
                     </div>
                 </div>
             </div>
