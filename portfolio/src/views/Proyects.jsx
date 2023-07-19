@@ -1,4 +1,4 @@
-import { customButton } from "../assets/styles/TailwindCustom";
+import { customTWS} from "../assets/styles/TailwindCustom";
 const Proyects = () =>{
     return (
 
@@ -14,8 +14,8 @@ const Proyects = () =>{
                     <p className="text-center ml-auto mr-auto  w-auto text-xl font-semibold mb-5">Title</p>
                     <p className="text-center w-auto text-base ml-5  mb-6 mr-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolore eaque praesentium odio ex nisi, minus facilis animi culpa autem aliquam maiores asperiores impedit neque voluptates aut veritatis a libero!</p>
                     <div className="ml-auto mr-auto w-80 space-x-8 mb-10 md:mt-auto md:mb-auto md:pt-4 box-border">
-                        <button className={`shadow-xl text-white ${customButton}}`}>Button1</button>
-                        <button className={`shadow-xl text-white ${customButton}}`}>Button2</button>
+                        <button className={`shadow-xl text-white ${customTWS.customButton}}`}>Button1</button>
+                        <button className={`shadow-xl text-white ${customTWS.customButton}}`}>Button2</button>
                     </div>
                 </div>
         </div>

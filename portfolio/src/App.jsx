@@ -7,18 +7,21 @@ import TechStack from'./views/TechStack';
 import About from './views/About';
 import Proyects from './views/Proyects';
 import ContactMe  from './views/Contact';
+import { useRef } from 'react';
+
+
 
 function App() {
-
+  const ref = useRef(null);
   return (
     <>
-      <div className="App" style={{ width: '100%', height: '100vh',marginTop:'100px' }}>
-          <Navbar />
+      <div  style={{ width: '100%', height: '100vh',marginTop:'100px' }}>
+          <Navbar ref={ref} />
           <Home />
           <TechStack/>
           <About />
           <Proyects />
-          <ContactMe />
+          <ContactMe ref={ref} />
           <Footer />
        </div>
     </>

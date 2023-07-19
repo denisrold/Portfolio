@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { customList,customButton } from '../assets/styles/TailwindCustom';
+import {customTWS } from '../assets/styles/TailwindCustom';
+import {forwardRef} from "react"
 
 
-const Navbar=()=>{
+const Navbar=(props,ref)=>{
     //BarState
     const [isMenuOpen, setMenuOpen] = useState(false);
     //BarHandler
@@ -12,6 +13,11 @@ const Navbar=()=>{
         setTimeout(() => {
             setMenuOpen(!isMenuOpen);
           }, "150")};
+    
+    const handleClick = () =>{
+    setMenuOpen(false);
+    ref.current?.scrollIntoView({behavior:'smooth'});
+    }
 
     return (
         <nav className="fixed h-20 z-10 rounded-b-sm w-full bg-blue-600 font-semibold  top-0 left-0 p-4 md:px-4 lg:px-36 text-white tracking-wide shadow-lg shadow-bottom">
@@ -23,15 +29,15 @@ const Navbar=()=>{
             <div className="w-full md:flex justify-between">
                 <span className="block text-3xl mt-2 mr-40 md:flex md:mt-1 md:text-2xl md:ml-5 lg:text-3xl lg:mr-0 md:mr-0">DenisWeb.dev</span>
                 <ul className={`${isMenuOpen ? 'border-b border-0 rounded-lg rounded-t-none absolute w-full left-0 mt-5 bg-white' : 'hidden'}  md:border-none md:w-fit md:bg-transparent md:relative md:text-white md:flex md:mt-4 my-2 mr-8 mt-3 text-lg hover:transition-all duration-300}`}>
-                    <li onClick={toggleMenu} className={customList}>About me</li>
-                    <li onClick={toggleMenu} className={customList}>Skills</li>
-                    <li onClick={toggleMenu} className={customList}>Projects</li>
-                    <li onClick={toggleMenu} className={`shadow-lg shadow-bottom md:hidden + ${customList}`}>Contact me</li>
+                    <li onClick={handleClick} className={customTWS.customList}>About me</li>
+                    <li onClick={handleClick} className={customTWS.customList}>Skills</li>
+                    <li onClick={handleClick} className={customTWS.customList}>Projects</li>
+                    <li onClick={handleClick} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>
                 </ul>
-                <button className={`hidden md:flex h-12 w-36 ${customButton}`}>Contact me</button>
+                <button onClick={handleClick} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>
             </div>
         </nav>
     )
     }
 
-export default Navbar;
+export default forwardRef(Navbar);
