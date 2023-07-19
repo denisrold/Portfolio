@@ -8,7 +8,7 @@ import {forwardRef} from "react"
 const ContactMe = (props,contactRef) =>{
     return(
         <div>
-        <p ref={contactRef} className="h-24"></p>
+        <p ref={contactRef} className="h-32"></p>
         <h1 className="text-4xl font-semibold mb-16 md:mb-24 lg:ml-6">Contact Me</h1>
         <div className="flex flex-col w-auto md:flex-row gap-8 md:gap-5 items-center md:justify-around lg:ml-8 mb-10 md:mb-32">
             <div className={`${customTWS.customCard} "+" ${Styles.card} mb-6 md:mb-0`}>
