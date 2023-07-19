@@ -1,6 +1,7 @@
 import { AboutText } from "../components/utils/AboutTexts";
+import {forwardRef} from "react"
 
-const About = ()=>{
+const About = (props,ref)=>{
     return (
 
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-24 mb-24">
@@ -19,5 +20,5 @@ const About = ()=>{
     )
 }
 
-export default About;
+export default forwardRef(About);
 

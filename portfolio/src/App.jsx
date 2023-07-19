@@ -19,8 +19,8 @@ function App() {
           <Navbar ref={ref} />
           <Home />
           <TechStack/>
-          <About />
-          <Proyects />
+          <About ref={ref}/>
+          <Proyects ref={ref}/>
           <ContactMe ref={ref} />
           <Footer />
        </div>
