@@ -1,11 +1,10 @@
-import { customTWS} from "../assets/styles/TailwindCustom";
+import {customTWS} from "../assets/styles/TailwindCustom";
 import {forwardRef} from "react"
 
 const Proyects = (props,projectsRef) =>{
     return (
-
-    <div ref={projectsRef} className="lg:ml-14">
-        <div className="h-24"></div>
+    <div className="lg:ml-14">
+        <div  ref={projectsRef}  className="h-24"></div>
         <div className="text-center md:-ml-6 lg:-ml-14 mb-10">
             <p  className="text-4xl font-semibold">Projects</p>
         </div>

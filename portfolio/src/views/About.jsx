@@ -4,7 +4,8 @@ import {forwardRef} from "react"
 const About = (props,aboutRef)=>{
     return (
 
-    <div ref={aboutRef} className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-24 mb-24">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-24 mb-24">
+        <div  ref={aboutRef} className="h-20"></div>
         <div  className="text-center mb-10 col-span-2">
             <p  className="text-4xl font-semibold">About Me</p>
         </div>
