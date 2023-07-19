@@ -2,4 +2,4 @@ export const customList="w-full pt-2 hover:text-blue-700 h-12 border-black borde
 
 export const customButton="bg-blue-500 justify-around border-0 hover:bg-blue-700 active:scale-95 focus:outline-none focus:bg-none"
 
-export const customCard="w-96 p-5 h-32 rounded-lg hover:scale-105 transition-transform duration-500 shadow-lg hover:shadow-xl bg-slate-50"
+export const customCard="w-96 p-5 h-32 rounded-lg hover:scale-105 transition-transform duration-500 shadow-lg hover:shadow-xl bg-slate-50 hover:bg-white hover:brightness-105"
