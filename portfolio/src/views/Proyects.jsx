@@ -5,11 +5,11 @@ const Proyects = (props,projectsRef) =>{
     return (
     <div className="lg:ml-14">
         <div  ref={projectsRef}  className="h-24"></div>
-        <div className="text-center md:-ml-6 lg:-ml-14 mb-10">
+        <div className="text-center md:-ml-6 lg:-ml-14 -mb-6 md:mb-24">
             <p  className="text-4xl font-semibold">Projects</p>
         </div>
-        <div className="bg-slate-100 max-w-screen-lg w-full   mt-14 md:h-80 pt-7 grid grid-cols-1 gap-4 md:grid-cols-2  mb-24 border border-black rounded-xl shadow-2xl lg:pr-10">
-                <div className="mx-auto md:pl-8 lg:pr-10 col-span-2 md:col-span-1 mb-10 md:mr-2">
+        <div className="bg-slate-100 max-w-screen-lg w-full mt-14 md:h-80 pt-7 grid grid-cols-1 gap-4 md:grid-cols-2  mb-24 border border-black rounded-xl shadow-2xl lg:pr-10">
+                <div className="mx-auto md:pl-8 lg:pr-10 col-span-2 md:col-span-1 md:mb-10 md:mr-2">
                     <div className="w-96 h-80 md:w-96 md:h-64 border border-black rounded-lg">Soy una Imagen</div>
                 </div>
                 <div className=" ml-2 col-span-1 md:col-span-1 md:ml-5 w-full md:pr-8">

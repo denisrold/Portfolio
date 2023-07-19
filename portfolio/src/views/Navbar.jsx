@@ -31,7 +31,7 @@ const Navbar=(props,ref)=>{
                 <ul className={`${isMenuOpen ? 'border-b border-0 rounded-lg rounded-t-none absolute w-full left-0 mt-5 bg-white' : 'hidden'}  md:border-none md:w-fit md:bg-transparent md:relative md:text-white md:flex md:mt-4 my-2 mr-8 mt-3 text-lg hover:transition-all duration-300}`}>
                     <li onClick={toggleMenu} className={customTWS.customList}>Skills</li>
                     <li onClick={()=>{handleClick(projectsRef)}} className={customTWS.customList}>Projects</li>
-                    <li onClick={()=>{handleClick(aboutRef)}} className={customTWS.customList}>About me</li>
+                    <li onClick={()=>{handleClick(aboutRef)}} className={customTWS.customList}>About</li>
                     <li onClick={()=>{handleClick(contactRef)}} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>
                 </ul>
                 <button onClick={()=>{handleClick(contactRef)}} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>

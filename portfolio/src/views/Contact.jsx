@@ -9,8 +9,8 @@ const ContactMe = (props,contactRef) =>{
     return(
         <div>
         <p ref={contactRef} className="h-24"></p>
-        <h1 className="text-4xl font-semibold mb-12 md:mb-10 lg:mb-16 lg:ml-6">Contact Me</h1>
-        <div className="flex flex-col w-auto md:flex-row gap-8 md:gap-5 items-center md:justify-around lg:ml-8 mb-32">
+        <h1 className="text-4xl font-semibold mb-10 md:mb-24 lg:ml-6">Contact Me</h1>
+        <div className="flex flex-col w-auto md:flex-row gap-8 md:gap-5 items-center md:justify-around lg:ml-8 mb-10 md:mb-32">
             <div className={`${customTWS.customCard} "+" ${Styles.card}`}>
                 <div className="flex flex-row space-x-4 pt-2 pl-3 gap-1">
                 <img src={iconMail} className="w-16 h-16 p-1  rounded-full shadow-xl" />
