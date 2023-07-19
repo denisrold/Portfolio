@@ -5,10 +5,10 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import iconMail from"../assets/icons/gmail.png"
 import {forwardRef} from "react"
  
-const ContactMe = (props,ref) =>{
+const ContactMe = (props,contactRef) =>{
     return(
         <>
-        <h1 ref={ref} className="text-4xl font-semibold mb-12 md:mb-10 lg:mb-16 lg:ml-6">Contact Me</h1>
+        <h1 ref={contactRef} className="text-4xl font-semibold mb-12 md:mb-10 lg:mb-16 lg:ml-6">Contact Me</h1>
         <div className="flex flex-col w-auto md:flex-row gap-8 md:gap-5 items-center md:justify-around lg:ml-8 mb-32">
             <div className={`${customTWS.customCard} "+" ${Styles.card}`}>
                 <div className="flex flex-row space-x-4 pt-2 pl-3 gap-1">

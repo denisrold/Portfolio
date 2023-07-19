@@ -1,10 +1,12 @@
 import { customTWS} from "../assets/styles/TailwindCustom";
-const Proyects = () =>{
+import {forwardRef} from "react"
+
+const Proyects = (props,projectsRef) =>{
     return (
 
     <div className="lg:ml-14">
         <div className="text-center md:-ml-6 lg:-ml-14 mb-10">
-            <p className="text-4xl font-semibold">Projects</p>
+            <p ref={projectsRef} className="text-4xl font-semibold">Projects</p>
         </div>
         <div className="bg-slate-100 max-w-screen-lg w-full   mt-14 md:h-80 pt-7 grid grid-cols-1 gap-4 md:grid-cols-2  mb-24 border border-black rounded-xl shadow-2xl lg:pr-10">
                 <div className="mx-auto md:pl-8 lg:pr-10 col-span-2 md:col-span-1 mb-10 md:mr-2">
@@ -24,4 +26,4 @@ const Proyects = () =>{
     )
 }
 
-export default Proyects;
+export default forwardRef(Proyects);

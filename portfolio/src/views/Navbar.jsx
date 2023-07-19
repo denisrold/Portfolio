@@ -13,8 +13,8 @@ const Navbar=(props,ref)=>{
         setTimeout(() => {
             setMenuOpen(!isMenuOpen);
           }, "150")};
-    
-    const handleClick = () =>{
+    const {contactRef,aboutRef,projectsRef} = ref;
+    const handleClick = (ref) =>{
     setMenuOpen(false);
     ref.current?.scrollIntoView({behavior:'smooth'});
     }
@@ -29,12 +29,12 @@ const Navbar=(props,ref)=>{
             <div className="w-full md:flex justify-between">
                 <span className="block text-3xl mt-2 mr-40 md:flex md:mt-1 md:text-2xl md:ml-5 lg:text-3xl lg:mr-0 md:mr-0">DenisWeb.dev</span>
                 <ul className={`${isMenuOpen ? 'border-b border-0 rounded-lg rounded-t-none absolute w-full left-0 mt-5 bg-white' : 'hidden'}  md:border-none md:w-fit md:bg-transparent md:relative md:text-white md:flex md:mt-4 my-2 mr-8 mt-3 text-lg hover:transition-all duration-300}`}>
-                    <li onClick={handleClick} className={customTWS.customList}>About me</li>
-                    <li onClick={handleClick} className={customTWS.customList}>Skills</li>
-                    <li onClick={handleClick} className={customTWS.customList}>Projects</li>
-                    <li onClick={handleClick} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>
+                    <li onClick={()=>{handleClick(aboutRef)}} className={customTWS.customList}>About me</li>
+                    <li onClick={toggleMenu} className={customTWS.customList}>Skills</li>
+                    <li onClick={()=>{handleClick(projectsRef)}} className={customTWS.customList}>Projects</li>
+                    <li onClick={()=>{handleClick(contactRef)}} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>
                 </ul>
-                <button onClick={handleClick} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>
+                <button onClick={()=>{handleClick(contactRef)}} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>
             </div>
         </nav>
     )

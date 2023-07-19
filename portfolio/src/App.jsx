@@ -12,16 +12,18 @@ import { useRef } from 'react';
 
 
 function App() {
-  const ref = useRef(null);
+  const contactRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
   return (
     <>
       <div  style={{ width: '100%', height: '100vh',marginTop:'100px' }}>
-          <Navbar ref={ref} />
+          <Navbar ref={{contactRef,aboutRef,projectsRef}} />
           <Home />
           <TechStack/>
-          <About ref={ref}/>
-          <Proyects ref={ref}/>
-          <ContactMe ref={ref} />
+          <About ref={aboutRef}/>
+          <Proyects ref={projectsRef}/>
+          <ContactMe ref={contactRef} />
           <Footer />
        </div>
     </>
