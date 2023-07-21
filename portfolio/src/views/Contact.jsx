@@ -6,7 +6,8 @@ import iconMail from"../assets/icons/gmail.png"
 import {forwardRef} from "react"
 import GoHomeButton from "../components/GoHomeButton";
 
-const ContactMe = (props,contactRef,homeRef) =>{
+const ContactMe = (props, ref) =>{
+    const {contactRef,homeRef}= ref
     return(
         <div>
         <p ref={contactRef} className="h-32"></p>
