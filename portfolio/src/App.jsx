@@ -25,7 +25,7 @@ function App() {
           <TechStack/>
           <About ref={aboutRef}/>
           <Proyects ref={projectsRef}/>
-          <ContactMe ref={contactRef} homeRef={homeRef}  />
+          <ContactMe ref={{contactRef, homeRef}}/>
           <Footer />
        </div>
     </>
