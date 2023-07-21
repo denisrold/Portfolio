@@ -6,7 +6,7 @@ import iconMail from"../assets/icons/gmail.png"
 import {forwardRef} from "react"
 import GoHomeButton from "../components/GoHomeButton";
 
-const ContactMe = (props,contactRef) =>{
+const ContactMe = (props,contactRef,homeRef) =>{
     return(
         <div>
         <p ref={contactRef} className="h-32"></p>
@@ -31,7 +31,7 @@ const ContactMe = (props,contactRef) =>{
                 </div>
             </div>
         </div>
-        <GoHomeButton />
+        <GoHomeButton ref={homeRef}/>
         </div>
     )
 }

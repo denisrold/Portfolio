@@ -14,6 +14,7 @@ const Navbar=(props,ref)=>{
             setMenuOpen(!isMenuOpen);
           }, "150")};
     const {contactRef,aboutRef,projectsRef,homeRef} = ref;
+    
     const handleClick = (ref) =>{
     setMenuOpen(false);
     ref.current?.scrollIntoView({behavior:'smooth'});

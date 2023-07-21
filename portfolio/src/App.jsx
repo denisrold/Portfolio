@@ -16,6 +16,7 @@ function App() {
   const contactRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  
   return (
     <>
       <div  style={{ width: '100%', height: '100vh'}}>
@@ -24,7 +25,7 @@ function App() {
           <TechStack/>
           <About ref={aboutRef}/>
           <Proyects ref={projectsRef}/>
-          <ContactMe ref={contactRef} />
+          <ContactMe ref={contactRef} homeRef={homeRef}  />
           <Footer />
        </div>
     </>
