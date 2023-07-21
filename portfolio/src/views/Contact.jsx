@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import iconMail from"../assets/icons/gmail.png"
 import {forwardRef} from "react"
- 
+import GoHomeButton from "../components/GoHomeButton";
+
 const ContactMe = (props,contactRef) =>{
     return(
         <div>
@@ -30,6 +31,7 @@ const ContactMe = (props,contactRef) =>{
                 </div>
             </div>
         </div>
+        <GoHomeButton />
         </div>
     )
 }
