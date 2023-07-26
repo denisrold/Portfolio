@@ -8,6 +8,8 @@ import About from './views/About';
 import Proyects from './views/Proyects';
 import ContactMe  from './views/Contact';
 import { useRef } from 'react';
+import {Skills} from "../src/views/Skills";
+import { ProjectsDetails } from "../src/views/ProjectsDetails";
 
 
 
@@ -18,11 +20,11 @@ function App() {
   const projectsRef = useRef(null);
   
   return (
-    <>
-      <div  style={{ width: '100%', height: '100vh'}}>
-        <Routes>
-            <Route path="/"element={
-            <>
+  <>
+    <div  style={{ width: '100%', height: '100vh'}}>
+      <Routes>
+        <Route path="/"element={
+          <>
             <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
             <Home ref={homeRef} />
             <TechStack/>
@@ -30,13 +32,13 @@ function App() {
             <Proyects ref={projectsRef}/>
             <ContactMe ref={{contactRef, homeRef}}/>
             <Footer />
-            </>
-            }/>
-            <Route path='/skills'/>
-            <Route path='/projects'/>
-          </Routes>
-       </div>
-    </>
+          </>
+        }/>
+        <Route path='/skills' element={<Skills/>}/>
+        <Route path='/projects' element={<ProjectsDetails/>}/>
+      </Routes>
+    </div>
+  </>
   )
 }
 
