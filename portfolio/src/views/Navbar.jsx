@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import {customTWS } from '../assets/styles/TailwindCustom';
 import {forwardRef} from "react"
-
 
 const Navbar=(props,ref)=>{
     //BarState
@@ -27,10 +27,10 @@ const Navbar=(props,ref)=>{
              onClick={toggleMenu}
              className={`m-4 mt-1 float-right md:hidden w-10 h-9 bg-none rounded-lg border-4 border-transparent  ${isMenuOpen ? 'bg-blue-700 rounded-lg border-4 border-blue-700 ':'bg-none'}`}
              />
-            <div className="w-full md:flex justify-between">
-                <span onClick={()=>{handleClick(homeRef)}} ref={ref} className=" cursor-pointer block text-3xl mt-2 mr-40 md:flex md:mt-1 md:text-2xl md:ml-5 lg:text-3xl lg:mr-0 md:mr-0">DenisWeb.dev</span>
+            <div  className="w-full md:flex justify-between">
+                <span onClick={()=>{handleClick(homeRef)}}  className=" cursor-pointer block text-3xl mt-2 mr-40 md:flex md:mt-1 md:text-2xl md:ml-5 lg:text-3xl lg:mr-0 md:mr-0">DenisWeb.dev</span>
                 <ul className={`${isMenuOpen ? 'border-b border-0 rounded-lg rounded-t-none absolute w-full left-0 mt-5 bg-white' : 'hidden'}  md:border-none md:w-fit md:bg-transparent md:relative md:text-white md:flex md:mt-4 my-2 mr-8 mt-3 text-lg hover:transition-all duration-300}`}>
-                    <li onClick={toggleMenu} className={customTWS.customList}>Skills</li>
+                    <li onClick={toggleMenu} className={customTWS.customList}><Link to="/skills">Skills</Link></li>
                     <li onClick={()=>{handleClick(projectsRef)}} className={customTWS.customList}>Projects</li>
                     <li onClick={()=>{handleClick(aboutRef)}} className={customTWS.customList}>About</li>
                     <li onClick={()=>{handleClick(contactRef)}} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>

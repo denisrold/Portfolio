@@ -20,13 +20,21 @@ function App() {
   return (
     <>
       <div  style={{ width: '100%', height: '100vh'}}>
-          <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
-          <Home ref={homeRef} />
-          <TechStack/>
-          <About ref={aboutRef}/>
-          <Proyects ref={projectsRef}/>
-          <ContactMe ref={{contactRef, homeRef}}/>
-          <Footer />
+        <Routes>
+            <Route path="/"element={
+            <>
+            <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
+            <Home ref={homeRef} />
+            <TechStack/>
+            <About ref={aboutRef}/>
+            <Proyects ref={projectsRef}/>
+            <ContactMe ref={{contactRef, homeRef}}/>
+            <Footer />
+            </>
+            }/>
+            <Route path='/skills'/>
+            <Route path='/projects'/>
+          </Routes>
        </div>
     </>
   )
