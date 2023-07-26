@@ -1,5 +1,6 @@
 import {customTWS} from "../assets/styles/TailwindCustom";
 import {forwardRef} from "react"
+import {Link} from "react-router-dom"
 
 const Proyects = (props,projectsRef) =>{
     return (
@@ -16,7 +17,11 @@ const Proyects = (props,projectsRef) =>{
                     <p className="text-center ml-auto mr-auto  w-auto text-xl font-semibold mb-5">Title</p>
                     <p className="text-center w-auto text-base ml-5  mb-6 mr-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolore eaque praesentium odio ex nisi, minus facilis animi culpa autem aliquam maiores asperiores impedit neque voluptates aut veritatis a libero!</p>
                     <div className="ml-auto mr-auto w-80 space-x-8 mb-10 md:mt-auto md:mb-auto md:pt-4 box-border">
-                        <button className={`shadow-xl text-white ${customTWS.customButton}}`}>Button1</button>
+                    <Link className="text-white hover:text-white" to="/projects">
+                        <button className={`shadow-xl ${customTWS.customButton}}`}>
+                          Details
+                        </button>
+                    </Link>
                         <button className={`shadow-xl text-white ${customTWS.customButton}}`}>Button2</button>
                     </div>
                 </div>
