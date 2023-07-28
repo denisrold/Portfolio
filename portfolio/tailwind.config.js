@@ -7,11 +7,18 @@ export default {
         long: "8000ms",
       },
       width: {
-        wbig: "530px",
+        wbig: "460px",
       },
       height: {
         84: "360px",
       },
+      boxShadow: {
+        shadowTop: "0px -4px 6px rgba(0, 0, 0, 0.1)",
+      },
+      scale: {
+        114: "1.14",
+      },
+
       keyframes: {
         fade: {
           "0%": { opacity: "1" },
