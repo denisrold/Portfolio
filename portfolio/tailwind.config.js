@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       transitionDuration: {
-        long: "8000ms",
+        long: "6000ms",
       },
       width: {
         wbig: "460px",
