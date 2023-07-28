@@ -1,6 +1,6 @@
 
 import {forwardRef} from "react"
-import ProjectCard from"../components/ProjectCard";
+import ProjectCard from"../components/projectCard/ProjectCard";
 
 const Proyects = (props,projectsRef) =>{
     return (

@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      transitionDuration: {
+        long: "8000ms",
+      },
+      width: {
+        wbig: "530px",
+      },
+      height: {
+        84: "360px",
+      },
       keyframes: {
         fade: {
           "0%": { opacity: "1" },
