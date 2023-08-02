@@ -33,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
