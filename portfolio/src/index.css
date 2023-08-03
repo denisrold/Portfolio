@@ -16,6 +16,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --bg-color-light: #eaeaea;
+  --text-color-light: #213547;
+}
+
+:root.dark-mode {
+  --bg-color-dark: #1a1a1a;
+  --text-color-dark: #ffffff;
 }
 
 a {
@@ -60,6 +67,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.dark-mode button {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -71,5 +83,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
 }
 

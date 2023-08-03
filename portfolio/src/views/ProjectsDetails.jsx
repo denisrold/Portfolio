@@ -11,13 +11,12 @@ export const ProjectsDetails = ()=>{
       }, [darkMode]);
 
     const handleToggleDarkMode = () => {
-        console.log(darkMode);
         dispatch({ type: 'TOGGLE_DARK_MODE' });
     };
     return(
         <>
-            <div>Soy mis Projects</div>
-            <button onClick={handleToggleDarkMode}></button>
+            <div>Configurando modo oscuro</div>
+            <button onClick={handleToggleDarkMode}>{darkMode ? 'Desactivar modo oscuro' : 'Activar modo oscuro'}</button>
         </>
     )
 }

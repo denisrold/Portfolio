@@ -10,6 +10,8 @@ import ContactMe  from './views/Contact';
 import { useRef } from 'react';
 import {Skills} from "../src/views/Skills";
 import { ProjectsDetails } from "../src/views/ProjectsDetails";
+import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
 
 
 
@@ -18,6 +20,19 @@ function App() {
   const contactRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+
+  //darkMode
+  const darkMode = useSelector(state => state.darkModeReducer.darkMode);
+
+  // Agregar o eliminar la clase 'dark-mode' del elemento raíz según el estado del modo oscuro
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add('dark-mode');
+    } else {
+      root.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
   
   return (
   <>
