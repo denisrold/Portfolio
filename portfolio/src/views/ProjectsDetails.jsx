@@ -2,12 +2,12 @@ import {useEffect} from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 export const ProjectsDetails = ()=>{
-    const darkMode = useSelector(state => state.darkModeReducer.darkMode);
-   
+    const darkMode = useSelector(state => state.darkModeReducer.darkMode); 
     const dispatch = useDispatch();
-  
+
     useEffect(() => {
         console.log(darkMode);
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
       }, [darkMode]);
 
     const handleToggleDarkMode = () => {

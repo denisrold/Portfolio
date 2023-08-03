@@ -10,8 +10,9 @@ import ContactMe  from './views/Contact';
 import { useRef } from 'react';
 import {Skills} from "../src/views/Skills";
 import { ProjectsDetails } from "../src/views/ProjectsDetails";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+
 
 
 
@@ -20,10 +21,17 @@ function App() {
   const contactRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
-
+  const dispatch = useDispatch();
   //darkMode
   const darkMode = useSelector(state => state.darkModeReducer.darkMode);
 
+  //LocalStorage && darkMode:
+  useEffect(() => {
+    const savedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+    if (savedDarkMode !== null && savedDarkMode !== darkMode) {
+      dispatch({ type: 'TOGGLE_DARK_MODE', payload: savedDarkMode });
+    }
+  }, []);
   // Agregar o eliminar la clase 'dark-mode' del elemento raíz según el estado del modo oscuro
   useEffect(() => {
     const root = document.documentElement;
@@ -33,7 +41,7 @@ function App() {
       root.classList.remove('dark-mode');
     }
   }, [darkMode]);
-  
+  //Fin del modo oscuro
   return (
   <>
     <div style={{ width: '100%', height: '100vh'}}>
