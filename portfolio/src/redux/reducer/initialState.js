@@ -1,5 +1,11 @@
+//States
 const initialState = {
-init: []
-  };
+  init: [],
+};
 
-  export default initialState;
+// InitialState DarkMode
+export const initialDarkMode = {
+  darkMode: false,
+};
+
+export default { initialState, initialDarkMode };
