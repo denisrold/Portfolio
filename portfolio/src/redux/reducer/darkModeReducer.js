@@ -1,8 +1,8 @@
-import { initialDarkMode } from "./initialState";
 import TOGGLE_DARK_MODE from "../actions/actions-types";
+import initialState from "./initialState";
 
 //reducer darkmode handler
-const darkModeReducer = (state = initialDarkMode, action) => {
+const darkModeReducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_DARK_MODE:
       return {

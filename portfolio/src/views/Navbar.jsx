@@ -36,6 +36,7 @@ const Navbar=(props,ref)=>{
                     <li onClick={()=>{handleClick(contactRef)}} className={`shadow-lg shadow-bottom md:hidden + ${customTWS.customList}`}>Contact me</li>
                 </ul>
                 <button onClick={()=>{handleClick(contactRef)}} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>
+             
             </div>
         </nav>
     )
