@@ -1,10 +1,11 @@
 import {useEffect} from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
+
 
 
 export const ProjectsDetails = ({buttonClicked})=>{
-
+    
     const darkMode = useSelector(state => state.darkModeReducer.darkMode); 
     const dispatch = useDispatch();
     //DarkMode

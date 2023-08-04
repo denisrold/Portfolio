@@ -68,7 +68,7 @@ button:focus-visible {
 }
 
 .dark-mode button {
-  background-color: var(--bg-color-dark);
+
   color: var(--text-color-dark);
 }
 
