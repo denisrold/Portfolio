@@ -4,16 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 export const ProjectsDetails = ({buttonClicked})=>{
-   
+
     const darkMode = useSelector(state => state.darkModeReducer.darkMode); 
     const dispatch = useDispatch();
     //DarkMode
-    useEffect(() => {
-       
-        localStorage.setItem('darkMode', JSON.stringify(darkMode));
-      }, [darkMode]);
-
-    //History location
     const navigate = useNavigate();
       
     useEffect(() => {
@@ -22,10 +16,20 @@ export const ProjectsDetails = ({buttonClicked})=>{
         navigate("/")
       }  
       }, [navigate,buttonClicked]);
+     
+      if (buttonClicked === false) {
+        return null;
+    }
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+      }, [darkMode]);
 
+    //History location
+   
     const handleToggleDarkMode = () => {
         dispatch({ type: 'TOGGLE_DARK_MODE' });
     };
+
 
     return(
         <>
