@@ -11,7 +11,7 @@ import { useRef } from 'react';
 import {Skills} from "../src/views/Skills";
 import { ProjectsDetails } from "../src/views/ProjectsDetails";
 import { useSelector, useDispatch } from 'react-redux';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
@@ -24,6 +24,12 @@ function App() {
   const dispatch = useDispatch();
   //darkMode
   const darkMode = useSelector(state => state.darkModeReducer.darkMode);
+  //Ruta segura
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const handleButtonClick = () => {
+    setButtonClicked(true);
+  };
 
   //LocalStorage && darkMode:
   useEffect(() => {
@@ -46,19 +52,19 @@ function App() {
   <>
     <div style={{ width: '100%', height: '100vh'}}>
       <Routes>
-        <Route path="/"element={
+        <Route exact path="/"element={
           <>
             <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
             <Home ref={homeRef} />
             <TechStack/>
             <About ref={aboutRef}/>
-            <Proyects ref={projectsRef}/>
+            <Proyects setButtonClicked={setButtonClicked} ref={projectsRef}/>
             <ContactMe ref={{contactRef, homeRef}}/>
             <Footer />
           </>
         }/>
         <Route path='/skills' element={<Skills/>}/>
-        <Route path='/projects' element={<ProjectsDetails/>}/>
+        <Route exact path='/projects' element={<ProjectsDetails buttonClicked={buttonClicked}/>}/>
       </Routes>
     </div>
   </>
