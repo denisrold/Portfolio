@@ -88,5 +88,22 @@ button:focus-visible {
 .dark-mode {
   background-color: var(--bg-color-dark);
   color: var(--text-color-dark);
-}
 
+  .mi-dark-mode {
+    background-color: var(--bg-color-dark);
+    border: none;
+  }
+  .mi-dark-mode-contact{
+    background-color: var(--bg-color-dark);
+  }
+  
+  .mi-dark-mode-contact a {
+    color: var(--text-color-dark);
+  }
+  .mi-dark-mode-contact a:hover {
+    color: slateblue;
+  }
+  .mi-dark-mode-footer{
+    background-color: var(--bg-color-dark);
+  }
+}
