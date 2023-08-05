@@ -106,4 +106,10 @@ button:focus-visible {
   .mi-dark-mode-footer{
     background-color: var(--bg-color-dark);
   }
+
+  .mi-dark-mode-buttonHome{
+  color:white;
+  border-color: white;
+
+  }
 }

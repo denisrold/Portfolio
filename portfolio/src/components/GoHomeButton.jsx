@@ -7,9 +7,9 @@ const handleClick = (ref) =>{
     ref.current?.scrollIntoView({behavior:'smooth'});
     }
 return (
-    <div className="mt-40 h-8 mb-4 flex flex-col max-w-screen-2xl  text-white ">
-    <button onClick={()=>{handleClick(ref)}} className="flex-col-reverse max-w-full items-center justify-center w-full mt-11 hover:mt-9 h-5 opacity-70 scale-x-125 bg-slate-800 hover:opacity-90  hover:shadow-xl rounded-xl hover:brightness-110 focus:outline-none focus:bg-none shadow-lg active:scale-y-90 hover:border-transparent text-center text-2xl  transition-all duration-300 active:text-slate-600">
-        <span className="text-3xl font-semibold font-serif">^</span>
+    <div className=" flex justify-end bg-transparent mb-8 mt-40">
+    <button onClick={()=>{handleClick(ref)}} className="mi-dark-mode-buttonHome pt-2 p-3  bg-opacity-50 border-2 text-slate-600 shadow-lg hover:border-blue-600 hover:text-blue-600 spin-border w-12 h-12 rounded-full md:hover:scale-105 transition-all duration-150">
+        <span className=".mi-dark-mode-buttonHome text-3xl font-semibold font-serif">^</span>
     </button>
     </div>
 )
