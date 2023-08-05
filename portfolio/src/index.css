@@ -110,6 +110,6 @@ button:focus-visible {
   .mi-dark-mode-buttonHome{
   color:white;
   border-color: white;
-
+  background-color: transparent;
   }
 }

@@ -16,7 +16,7 @@ import project from "../../assets/images/project.png"
         <div className=" ml-2 col-span-1 md:pt-4 md:col-span-1 w-full md:w-96 md:mr-auto md:ml-16 md:pr-8">
             <p className="text-center ml-auto mr-auto  w-auto text-xl font-semibold mb-5">Title</p>
             <p className="text-center w-auto text-base ml-5 mb-6 mr-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolore eaque praesentium odio ex nisi, minus facilis animi culpa autem aliquam maiores asperiores impedit neque voluptates aut veritatis a libero!</p>
-            <div className="ml-auto mr-auto w-80 lg:ml-15 space-x-8 mb-10 md:mt-auto md:mb-auto md:pt-4 box-border">
+            <div className="ml-auto mr-auto w-80  lg:ml-15 space-x-12 mb-10 md:mt-auto md:mb-auto md:pt-4 box-border">
             <Link onClick={handleButtonClick} className="text-white hover:text-white" to="/projects">
                 <button   className={`shadow-xl ${customTWS.customButton}}`}>
                   Details
