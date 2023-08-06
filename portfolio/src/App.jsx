@@ -12,6 +12,7 @@ import {Skills} from "../src/views/Skills";
 import { ProjectsDetails } from "../src/views/ProjectsDetails";
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
+import { DarkModeButton } from './components/darkModeButton/darkModeButton';
 
 
 
@@ -21,9 +22,6 @@ function App() {
   const contactRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
-  const dispatch = useDispatch();
-  //darkMode
-  const darkMode = useSelector(state => state.darkModeReducer.darkMode);
   //Ruta segura
   const [buttonClicked, setButtonClicked] = useState(false);
 
@@ -31,23 +29,7 @@ function App() {
     setButtonClicked(true);
   };
 
-  //LocalStorage && darkMode:
-  useEffect(() => {
-    const savedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
-    if (savedDarkMode !== null && savedDarkMode !== darkMode) {
-      dispatch({ type: 'TOGGLE_DARK_MODE', payload: savedDarkMode });
-    }
-  }, []);
-  // Agregar o eliminar la clase 'dark-mode' del elemento raíz según el estado del modo oscuro
-  useEffect(() => {
-    const root = document.documentElement;
-    if (darkMode) {
-      root.classList.add('dark-mode');
-    } else {
-      root.classList.remove('dark-mode');
-    }
-  }, [darkMode]);
-  //Fin del modo oscuro
+  
   return (
   <>
     <div style={{ width: '100%', height: '100vh'}}>
@@ -55,6 +37,7 @@ function App() {
         <Route exact path="/"element={
           <>
             <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
+            <DarkModeButton />
             <Home ref={homeRef} />
             <TechStack/>
             <About ref={aboutRef}/>
