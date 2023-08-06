@@ -8,10 +8,7 @@
     background-color: #f8f8f8;
     border-radius:10rem;
     box-shadow: inset 4px 4px 6px #cecece,-1px -1px 1px #cecece;
-    margin: 0 auto;
-    margin-top: 10px;
     cursor: pointer;
-    
 }
 .toggle{
     position: absolute;
