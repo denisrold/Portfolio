@@ -1,6 +1,7 @@
 import {useEffect} from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate,useLocation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+import{DarkModeButton} from'../components/darkModeButton/darkModeButton'
 
 
 
@@ -12,7 +13,6 @@ export const ProjectsDetails = ({buttonClicked})=>{
     const navigate = useNavigate();
       
     useEffect(() => {
-        console.log(buttonClicked)
       if(buttonClicked == false){
         navigate("/")
       }  
@@ -36,6 +36,7 @@ export const ProjectsDetails = ({buttonClicked})=>{
         <>
             <div>Configurando modo oscuro</div>
             <button onClick={handleToggleDarkMode}>{darkMode ? 'Desactivar modo oscuro' : 'Activar modo oscuro'}</button>
+            <DarkModeButton />
         </>
     )
 }

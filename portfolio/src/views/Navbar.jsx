@@ -37,11 +37,7 @@ const Navbar=(props,ref)=>{
                 </ul>
                 <button onClick={()=>{handleClick(contactRef)}} className={`hidden md:flex h-12 w-36 ${customTWS.customButton}`}>Contact me</button>
             </div>
-            {/*Probando darkMode*/}
-            <div className='w-full flex flex-col items-end justify-end -mt-20 space-y-3  ml-20'>
-                <button className='bg-blue-600 w-fit h-fit p-0 active:scale-95 focus:outline-none focus:bg-none'>on</button>
-                <button className='bg-blue-600 w-fit h-fit p-0 active:scale-95 focus:outline-none focus:bg-none'>Es</button>
-            </div>
+           
         </nav>
     )
     }
