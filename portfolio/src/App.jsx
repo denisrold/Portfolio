@@ -10,9 +10,7 @@ import ContactMe  from './views/Contact';
 import { useRef } from 'react';
 import {Skills} from "../src/views/Skills";
 import { ProjectsDetails } from "../src/views/ProjectsDetails";
-import { useSelector, useDispatch } from 'react-redux';
-import React, { useEffect, useState } from 'react';
-import { DarkModeButton } from './components/darkModeButton/darkModeButton';
+import React, { useState } from 'react';
 
 
 
@@ -37,7 +35,6 @@ function App() {
         <Route exact path="/"element={
           <>
             <Navbar ref={{contactRef,aboutRef,projectsRef,homeRef}} />
-            <DarkModeButton />
             <Home ref={homeRef} />
             <TechStack/>
             <About ref={aboutRef}/>
