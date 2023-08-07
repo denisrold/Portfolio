@@ -5,7 +5,7 @@ import {forwardRef} from "react"
 const Home=(props,homeRef)=>{
     return (
         <>
-        <p ref={homeRef}  className="h-32"></p>
+        <p ref={homeRef}  className="h-32 -mt-14"></p>
         <DarkModeButton/>
         <main className='flex flex-col items-center md:mb-12 mb-14 md:flex-row md:justify-center lg:space-x-28 gap-8 lg:mb-20'>
             <div className='flex flex-col items-start text-start'>
