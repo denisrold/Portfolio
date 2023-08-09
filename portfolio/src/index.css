@@ -85,6 +85,7 @@ button:focus-visible {
   }
 }
 
+
 .dark-mode {
   background-color: var(--bg-color-dark);
   color: var(--text-color-dark);
@@ -93,6 +94,7 @@ button:focus-visible {
     background-color: var(--bg-color-dark);
     border: none;
   }
+
   .mi-dark-mode-contact{
     background-color: var(--bg-color-dark);
   }
@@ -112,4 +114,12 @@ button:focus-visible {
   border-color: white;
   background-color: transparent;
   }
+
+  .dark-mode-on{
+    background-color: grey;
+    scale: 86%;
+    box-shadow: 2px 2px 2px #c4c4c4;
+    transform: translate(1.6rem);
+}
+
 }

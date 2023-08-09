@@ -36,7 +36,7 @@ export const DarkModeButton =()=>{
       return(
     <div className='w-full scale-115 flex justify-end mb-20'>
     <div className={`${Style.container} scale-100`}>
-    <button onClick={handleToggleDarkMode} className={`${Style.toggle} p-0 focus:outline-none focus:bg-none`}></button>
+    <button onClick={handleToggleDarkMode} className={`${Style.toggle} dark-mode-on p-0 focus:outline-none focus:bg-none`}></button>
     </div>
     </div>
  )
